@@ -17,7 +17,7 @@ void reverse()
 int main()
 {
         FILE *fp;
-        if((fp = fopen("4kb.txt", "r")) == NULL)
+        if((fp = fopen("64mb.txt", "r")) == NULL)
         {
                 printf("can not open file");
         }
@@ -27,7 +27,7 @@ int main()
 		fclose(fp);
 	}
         reverse();
-	if((fp = fopen("4kb.txt", "w")) == NULL)
+	if((fp = fopen("64mb.txt", "w")) == NULL)
         {
                 printf("can not open file");
         }
